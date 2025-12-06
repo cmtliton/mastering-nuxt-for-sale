@@ -24,7 +24,9 @@ const scrollToBuild = () => {
     <div class="glow-effect"></div>
     <div class="grid-lines"></div>
 
-    <v-container class="fill-height position-relative z-index-1 pt-16 pb-10">
+    <v-container
+      class="fill-height position-relative z-index-1 pt-16 pb-10 justify-center"
+    >
       <v-row justify="center" align="center" class="text-center mt-10">
         <v-col cols="12" md="10" lg="8">
           <!-- টপ ব্যাজ (Badge) -->
@@ -50,7 +52,7 @@ const scrollToBuild = () => {
 
           <!-- সাব-হেডলাইন / ডেসক্রিপশন -->
           <p
-            class="text-body-1 text-md-h6 text-grey-lighten-1 mb-10 px-md-10"
+            class="text-body-1 text-md-h6 text-grey-lighten-1 mb-10 px-md-10 ma-5"
             style="line-height: 1.6"
           >
             The complete guide to building professional web applications. From
@@ -90,7 +92,7 @@ const scrollToBuild = () => {
               size="x-large"
               rounded="lg"
               height="60"
-              class="text-capitalize font-weight-bold px-8 w-100 w-sm-auto"
+              class="text-capitalize font-weight-bold px-8 w-100 w-sm-auto ma-2"
               prepend-icon="mdi-play-circle-outline"
               @click="scrollToBuild"
             >
@@ -100,7 +102,7 @@ const scrollToBuild = () => {
 
           <!-- ফিচার হাইলাইটস (ছোট আইকন সহ) -->
           <div
-            class="d-flex justify-center align-center flex-wrap gap-6 mt-12 text-grey-lighten-2 text-caption text-sm-body-2"
+            class="d-flex justify-center align-center flex-wrap gap-6 mt-12 text-grey-lighten-2 text-caption text-sm-body-2 pa-2"
           >
             <div class="d-flex align-center mx-2">
               <v-icon
