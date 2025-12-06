@@ -41,7 +41,6 @@ const plans = [
       "Payment Gateway Integration",
       "Deployment Masterclass",
       "1-on-1 Code Review (1 Session)",
-      "Certificate of Completion",
       "Future Updates Included",
     ],
   },
@@ -98,7 +97,7 @@ const openOrderModal = (plan: any) => {
             <!-- Best Value ব্যাজ (শুধুমাত্র Complete প্যাকেজের জন্য) -->
             <div
               v-if="plan.isPopular"
-              class="popular-badge text-caption font-weight-bold"
+              class="popular-badge text-caption font-weight-bold mt-4"
             >
               BEST VALUE
             </div>

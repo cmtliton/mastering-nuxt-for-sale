@@ -10,6 +10,12 @@ const scrollToPricing = () => {
     element.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 };
+const scrollToBuild = () => {
+  const element = document.querySelector("#preview");
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+};
 </script>
 
 <template>
@@ -50,7 +56,7 @@ const scrollToPricing = () => {
             The complete guide to building professional web applications. From
             <strong>Zero to Production</strong> featuring
             <span class="text-nuxt-green">Nuxt 4</span>,
-            <span class="text-white">Vuetify</span>, and an
+            <span class="text-white">Tailwind css</span>, and an
             <span class="text-purple-lighten-2">AI-powered project</span>.
             <br class="d-none d-md-block" />
             Start your journey to becoming a Senior Nuxt Developer today.
@@ -67,7 +73,7 @@ const scrollToPricing = () => {
               rounded="lg"
               elevation="6"
               height="60"
-              class="text-capitalize text-black font-weight-bold px-8 w-100 w-sm-auto glow-btn"
+              class="text-capitalize text-black font-weight-bold px-8 w-100 w-sm-auto glow-btn ma-2"
               prepend-icon="mdi-flash"
               @click="scrollToPricing"
             >
@@ -86,6 +92,7 @@ const scrollToPricing = () => {
               height="60"
               class="text-capitalize font-weight-bold px-8 w-100 w-sm-auto"
               prepend-icon="mdi-play-circle-outline"
+              @click="scrollToBuild"
             >
               Watch Preview
             </v-btn>
@@ -95,7 +102,7 @@ const scrollToPricing = () => {
           <div
             class="d-flex justify-center align-center flex-wrap gap-6 mt-12 text-grey-lighten-2 text-caption text-sm-body-2"
           >
-            <div class="d-flex align-center">
+            <div class="d-flex align-center mx-2">
               <v-icon
                 icon="mdi-check-circle"
                 color="#00DC82"
@@ -104,7 +111,7 @@ const scrollToPricing = () => {
               ></v-icon>
               100+ Lessons
             </div>
-            <div class="d-flex align-center">
+            <div class="d-flex align-center mx-2">
               <v-icon
                 icon="mdi-check-circle"
                 color="#00DC82"
@@ -154,6 +161,7 @@ const scrollToPricing = () => {
                   size="x-large"
                   color="#00DC82"
                   variant="flat"
+                  @click="scrollToBuild"
                 ></v-btn>
               </div>
             </v-img>

@@ -87,7 +87,7 @@ const faqs = [
             rounded="pill"
             class="text-capitalize font-weight-bold"
             prepend-icon="mdi-email-outline"
-            href="mailto:support@example.com"
+            href="mailto:assisthem23@gmail.com"
           >
             Contact Support
           </v-btn>

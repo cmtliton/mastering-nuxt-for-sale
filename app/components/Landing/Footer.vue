@@ -68,7 +68,7 @@ const scrollToSection = (id: string) => {
           <ul class="list-none pl-0">
             <li class="mb-3">
               <a
-                @click="scrollToSection('#curriculum')"
+                @click="scrollToSection('#what-you-build')"
                 class="footer-link cursor-pointer"
                 >Curriculum</a
               >
@@ -108,7 +108,7 @@ const scrollToSection = (id: string) => {
               <a href="#" class="footer-link">Privacy Policy</a>
             </li>
             <li class="mb-3">
-              <a href="mailto:support@example.com" class="footer-link"
+              <a href="mailto:assisthem23@gmail.com" class="footer-link"
                 >Contact Support</a
               >
             </li>
@@ -185,7 +185,14 @@ const scrollToSection = (id: string) => {
             &copy; {{ new Date().getFullYear() }} Mastering Nuxt BD. All rights
             reserved.
             <br class="d-sm-none" />
-            Distribution by <span class="text-white">Your Name/Company</span>.
+            Distribution by
+            <a
+              class="text-white text-decoration-none"
+              href="https://assisthem.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >AssisThem</a
+            >.
           </p>
         </v-col>
         <v-col cols="12" md="6" class="text-center text-md-right">
@@ -199,7 +206,7 @@ const scrollToSection = (id: string) => {
               size="small"
               class="mx-1"
             ></v-icon>
-            using Nuxt 4 & Vuetify
+            using Nuxt 4 & Tailwind CSS
           </div>
         </v-col>
       </v-row>
